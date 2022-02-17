@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    width: 250px;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: .4s;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 5px;
+    margin: 5px;
+}
+.card:hover{
+    box-shadow: 0px 0px 15px rgb(195, 195, 195);
+    transition: .4s;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+}
+.card h1{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.card .cost{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 600;
+    color: rgb(214, 78, 78);
+    font-size: 20px;
+    padding: 5px;
+    align-items: center;
+}
+.card button{
+    display: flex;
+    font-weight: 600;
+    flex-direction: row;
+    background-color: rgb(214, 78, 78);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.card button:hover{
+    box-shadow: 0px 0px 15px rgb(214, 78, 78);
+    transition: .4s;
+}
+.card button img{
+    width: 32px;
+    height: 32px;
+}
